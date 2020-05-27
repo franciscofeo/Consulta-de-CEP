@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/a0b0a336f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Consulta de CEP</h1>
+        <div class="informacoes">
+            <form id="formInfo" onsubmit="buscaCep()">
+                <label for="cep">Digite o seu CEP:</label>
+                <input type="text" name="cep" id="cep">
+                <div class="botao">
+                    <button type="submit">Enviar <i class="fas fa-share"></i></button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <div class="resultado" style="display: none;"></div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="cep.js"></script>
+</body>
+
+</html>
